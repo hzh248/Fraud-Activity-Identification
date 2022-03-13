@@ -1,466 +1,411 @@
-# Fraud-Activity-Identification
+NEW ALLIANCE BANK  
 
----
-title: "Case_Competition"
-author: "MSBA635_Coh_B_Tm_2"
-date: "1/25/2022"
-output: html_document
----
+ 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Case Competition Report 
+
+ 
+
+ 
+
+“Fraud Activity Identification” 
+
+By 
+
+Team 2  
+
+Choukry, Kenza 
+
+Eisenman, Dana 
+
+Kommareddy, Krithik 
+
+Nukala, Sriram 
+
+Zhang, Hao 
+
+ 
+
+ 
+
+ 
+
+Prepared for: MSBA 635  
+
+                       Prof: Dr. Green 
+
+ShapeCase Background/Business Problem:  
+
+Alliance Bank is an international bank and financial services company that provides highly integrated banking services. Since the start of the pandemic, consumer’s use of online banking has skyrocketed as banks have limited in-person services or visits. As a result, more New Alliance Bank customers (especially in the older and more vulnerable population) are using online banking, which means that more customers are susceptible to financial exploitation (scamming and fraud). The older population of customers are also less likely to report any exploitation or fraud transactions. Currently digital payment data is not analyzed. 
+
+The aim of this analysis is to help the New Alliance Bank to detect if a transaction is fraudulent or not and depending on these results, the bank will choose what actions need to be taken. To better understand the study we are working on, it is worthwhile looking at some global statistics. The banking industry has known a multi-billion-dollar fraud problem, which means that banks or financial institutions spend a lot of money on fraud management tools or procedures to minimize fraudulent transactions. As of 2020, there was a total of $20 billion in losses for U.S. banks and financial institutions according to a new report from a  software company FiVerity (ref: Banking journal "Source"). 
+
+As it might be known, real-time payments sometimes are settled instantly, and if they are not stopped, the money is then lost. The problem we are tackling is supervised and requires a categorical model as we are attempting to predict our character variable (fraud or not fraud) of interest based on known customer and transactional data. To do so, we have come up with our study flow with the different steps taken during the analysis: 
+
+ 
+
+ShapeShapeFigure 1: Study Flow 
+
+ShapeShapeDiagram
+
+Description automatically generated with medium confidence 
+
+ 
+
+ShapeBusiness problem: correctly defining the business problem is a big step towards a more accurate analysis.  
+
+Data processing: this starts with data cleaning and better understanding the New Alliance bank data. Also, this includes adding features (variables) to the data to take a closer look at the fraudsters’ target. 
+
+Building multiple models: building multiple models using the R statistical computing software then picked the model that best fits the model 
+
+Prediction accuracy: from that model we are getting number prediction if this is a fraud or not fraud 
+
+And depending on these predictions we came up with our own set of recommendations that will help the Bank detect fraudulent transactions among digital payment and present the bank with the right solutions to help in different aspects (creating a smooth and safe experience to the customers, minimizing lost funds…).  
+
   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ShapeRecommendations:  
+
+All the recommendations should be first implemented on customers in a city then the state and then the whole group of customers. As we start small, we can get to know whether the recommendations are working efficiently and then implement those on a large scale. This methodology will help in identifying the better recommendations to proceed further. The recommendations are:  
+
+Model to Identify customers at higher risk for fraud:  
+
+As a future consideration of the model, the model should be developed to identify customers who are at a higher risk of fraud. These customers should be informed, and the bank should provide tips and tricks to help reduce their vulnerability. Some of the tips and tricks are as follows:  
+
+Set strong passwords: A strong password is at least eight characters in length and includes a mix of upper and lowercase letters, numbers, and special characters. 
+
+Keep your computers and mobile devices up to date.: Having the latest security software, web browser, and operating system are the best defenses against viruses, malware, and other online threats. Turn on automatic updates so you receive the newest fixes as they become available. 
+
+Secure your internet connection: Always protect your home wireless network with a password. When connecting to public Wi-Fi networks, be cautious about what information you are sending over it. 
+
+Change password regularly: The passwords should be changed in a span of 60-90 days as this can reduce the potential risk if the password was leaked or known to someone 
+
+Personal fraud protection officer: 
+
+The customers who are identified to be at higher risk for fraud should be assigned an individual fraud protection officer who closely observes their transactions, which will make the customer feel less pressurized.  
+
+Alert on transactions flagged as FRAUD:  
+
+When the model detects any fraudulent activity, an automated text message should be sent to the customer to verify the purchase.  
+
+Multiple FRAUDS:   
+
+If some types of fraudulent activity are being noticed on a set of people, then a fraud protection officer who observes their transactions should be assigned for them.  
+
+Biometrics: Biometry is the physical or behavioral characteristics that can be used to digitally identify a person, as a security measure. Biometrics work as the identification part of the payment flow to authenticate the shopper to confirm that he is the legit user of the payment method. Biometrics can be physical, like a fingerprint, iris scanner, or facial ID; or behavioral, like navigation / keystroke patterns or physical movements unique to the individual. 
+
+ShapeEnhanced Knowledge-based Authentication:  
+
+Knowledge-based authentication technology validates identifies against outside sources. Soon it will be easier to quickly determine if an address truly belongs to the caller. The technology incorporates third-party data and tools from providers like LexisNexis, which features access to data on 400 million people from over 10,000 sources. It looks to see whether personal information like phone numbers, addresses, and other data provided by a caller appears in association with the same individual in other records. It can also combine data from multiple sources to create extremely hard-to-guess challenge questions—such as the color of a vehicle the caller owned in 2010. 
+
+Finally, Federal Law plays a large part in the actions of fraudsters. The New Alliance Bank should join forces with other financial institutions to lobby US Representatives and convince them to reduce the dollar limit at all levels (ex: make it a Class B Felony for any fraudulent transaction up to $250 instead of $500.) 
+
+Table 1: Punishments by Level of Fraud 
+
+Fraud Amount (USD) 
+
+Crime 
+
+Punishment in Kentucky 
+
+Up to $500 
+
+Class A Misdemeanor 
+
+Up to 30 days in prison 
+
+$501 to $10,000 
+
+Class D Felony 
+
+1 to 5 years 
+
+Over $10,000 
+
+Class C Felony 
+
+5 to 10 years 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ShapeValue: 
+
+From the given dataset, New Alliance Bank had a loss of $1.6m in 2021 due to fraud transactions. The model developed has an accuracy of 99% to predict fraud transactions. Once predicted, if the Bank can stop the transaction, it can prevent the New Alliance Bank from huge loss. The model developed is automated to predict fraud transactions. So, this lower Fraud operation cost which the New Alliance Bank spends on Data analysts to analyze the data manually and reduces the work of the data analysts.  
+
+When businesses do not have to conduct manual reviews, they have more time to focus on strategic business objectives. For example, without the weight of managing manual reviews and chargebacks, fraud analysts can make recommendations on how to manage risks associated with new products and expanded offerings. The model reduces stress among the customers who are worried about fraud transactions as there will high security and in turn increases the trust in the bank. 
+
+Areas for Further Analysis:  
+
+There are three areas that could be further explored to improve the model. First, there are many missing data. Adding those data to train our model could help to improve the model’s accuracy. We could explore what are the reasons caused by the lost data and recover them if it is lost through switching systems and can use data mapping to gather the lost data to our model. Secondly, adding some new variables would help us to improve the model as well. For example, adding a variable such as payment method would help us to see whether mobile or online transactions have a higher chance of fraud. If one type has a higher chance of fraud, the developers should add more safety features to the web application or the mobile app. And adding a variable such as payment category could help us to see if shopping for gift cards, or shopping on certain websites would relate to a higher chance of fraud. Finally, we could also improve our model by utilizing more of the existing data. This includes a better understanding of the available fields. In this model, we did not consider the internet carrier as a part of building our model. There could be a relationship that switch carrier would relate to a chance of fraud. These possibilities could be further explored. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ShapeData Exploration:  
+
+There are a total of 12601 observations and 24 predictor variables. The predictor variables can be grouped into four main categories:  
+
+Transaction History: (Transaction ID, Amount of transaction, transaction’s region, transaction’s state, transaction date, transaction time stamp, carrier’s name, activity date of transaction) 
+
+Customer’s profile: (Customer’s age, Customer’s zip code, Customer’s state, bank’s joining date, phone number update timestamp, customer’s password update timestamp, available account balance before transaction, customer’s device age). 
+
+Transaction’s alert authentication: (device type alerted, device type used in transaction, bank account authentication result, primary authentication transaction type, secondary authentication results) 
+
+Internal new Alliance variables: (Internal new Alliance account information, internal new Alliance identification code, internal new Alliance transaction code, account action code) 
+
+Some of the categorical variables have missing values and we also noticed outliers and inconsistencies. Like device age has a negative value. Some of the timestamp's variables are defined as characters which makes R think that it is a categorical variable. 
+
+Table 1: Summary statistics 
+
+Table
+
+Description automatically generated 
+
+ShapeFigure 2: Histogram of Customer’s age 
+
+Chart, histogram
+
+Description automatically generatedBased on this distribution, about 10% of the customers are 60 years old. 
+
+Figure 3: Histogram of Transaction amounts  
+
+Chart, histogram
+
+Description automatically generated 
+
+Based on this distribution, 40% of the transaction are below 30$ and 40% are in between $400 to $500.  
+
+ShapeFigure 4: Scatter plot, Customer’s age vs Transaction amount 
+
+Chart, scatter chart
+
+Description automatically generated 
+
+Scatter plot showing customer’s age vs transactions amount grouped by fraud or not.  
+
+Figure 5: Box plot for customer device age  
+
+Chart, box and whisker chart
+
+Description automatically generated 
+
+This plot shows that most of the customer’s device age associated with their accounts is 600 days and shows the outliers. 
+
+ShapePre-processing, and Feature Engineering 
+
+If we omit rows that have one or more missing values, we will delete ~10,000 observations. To prevent this, we replaced missing values with appropriate entries: 
+
+For date variables, we replaced them with the latest transaction date. The rationale was that perhaps the database was not completely updated when the query was run. We plan to work with the New Alliance Bank to determine if there are other (better) dates to replace them with. For example, if the blanks are due to a change in database (Oracle -> SQL), then we can replace them with the date the change occurred. 
+
+For categorical variables, we replaced the missing values with “Other.”  
+
+Some variables in the original data were removed for several reasons:  
+
+Predictor variables that contain dates and times can be difficult to work with when training a predictive model. So, many of them were used to calculate another variable and then the original predictor was deleted. For example, CUST_SINCE_DT was used to calculate the number of years someone was a customer of New Alliance Bank. That new data was stored in Cust_Since_Years_ and then CUST_SINCE_DT was deleted. 
+
+The categorical variables 'ACTN_CD', 'ACTN_INTNL_TXT', 'TRAN_TYPE_CD will be removed as they have only one unique value and do not have an impact on prediction. 
+
+TRAN_DT and ACTVY_DT can be dropped as both provide the same data which is available in TRAN_TS. 
+
+Below are some examples of the new variables we created, broken down by Fraud vs. Non-Fraud:  
+
+Figures 6 & 7: Day of the Week 
+
+Chart, bar chart
+
+Description automatically generated 
+
+ 
+
+ShapeFigures 8 & 9: Customer Age 
+
+ 
+
+Chart, bar chart, waterfall chart
+
+Description automatically generated 
+
+ 
+
+ 
+
+Figures 10 & 11: Hour of the Day 
+
+Chart, bar chart, histogram
+
+Description automatically generated 
+
+ShapeModel Exploration 
+
+As we began to explore potential models, we divided the training data into three pieces: 
+
+80% data for Training & Validation and 20% for Testing.  
+
+Classification Model: Because this is a classification problem, we first started with a simple Classification Model.  
+
+Fig 12: Decision tree for Classification Model 
+
+Diagram
+
+Description automatically generated 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ShapeFigures 13: Variables by Importance for Classification Model 
+
+Chart
+
+Description automatically generated 
+
+Fig 14: Variables by Importance to the Classification model  
+
+Chart, line chart
+
+Description automatically generatedThe Area Under the Curve (AUC) for the Classification model was 0.88015. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ShapeRandom Forest: Next, we ran a Random Forest model on our data, Random Forest is an ensemble decision tree model that uses bootstrap aggregation (referred to as bagging) to essentially simulate a larger dataset. 
+
+Fig 16: Variables by Importance to the Classification model 
+
+Graphical user interface, chart
+
+Description automatically generated with medium confidence 
+
+Fig 17: ROC for Random Forest model 
+
+The Area Under the Curve (AUC) for the Random Forest model was 0.9832      
+
+Chart
+
+Description automatically generated    
+
+ShapeGradient Boosting Tree: Next, we tried another variation of decision trees, a gradient boosting tree. This model sequentially adds predictors to a decision tree ensemble, each one correcting its predecessor. This method attempts to fit the new predictor (or successor) to the residual errors made by the previous predictor/predecessor. In general, gradient boosting trees have shorter training time than random forests as they train much fewer trees. 
+
+Fig 18: Variables by Importance to the Gradient Boost model 
+
+Graphical user interface, chart
+
+Description automatically generated 
+
+Fig 19: ROC for XGBoost model  
+
+The Area Under the Curve (AUC) for the XGBoost model was 0.99028 
+
+Chart
+
+Description automatically generated 
+
+ShapeModel Selection:   
+
+Table 3: Model Evaluation Comparison 
+
+Model Type ​ 
+
+AUC​ 
+
+Classification ​ 
+
+0.88015 ​ 
+
+Random Forest ​ 
+
+0.97297 ​ 
+
+XGBoost ​ 
+
+0.9907 ​ 
+
+ 
+
+Given these three models, all with adequate ROC AUC scores, we decided to use XGBoost as our Final model for the following reasons: 
+
+XGBoost has the highest AUC of the 3 models we built 
+
+ 
+
+XGBoost reduces variances and increases prediction accuracy by learning slowly from errors/residuals of observations 
+
+ 
+
+Though it’s difficult to interpret XGBoost, it has better prediction accuracy over classification tree. 
+
   
-### Members of MSBA 635, Cohort B, Team 2  
-**Choukry, Kenza**  
-**Eisenman, Dana**  
-**Kommareddy, Krithik**  
-**Nukala, Sriram**  
-**Zhang, Hao**  
-
-Winter 2022 Case Competition Submission
-
-
-## Loading Packages and Setting Working Directory
-The hidden code chunk is used to load the required packages:
- - caret
- - skimr
- - tidyverse
- - ROCR
- - rpart & rpart.plot
- - randomForest
- - xgboost  
- - lubridate  
-
-The code block also sets the working directory. **YOU MUST UPDATE THE WORKING DIRECTORY TO YOUR NEED!** 
-
-Finally, the code block increases the memory allocation for R.
-
-```{r packages_setwd, echo = FALSE, warning = FALSE, message = FALSE}
-library(caret)
-library(skimr)
-library(tidyverse)
-library(ROCR)
-library(rpart)
-library(rpart.plot)
-library(randomForest)
-library(xgboost)
-library(lubridate)
-
-setwd("E:/MSBA/20220103 MSBA635 Data Analytics 2/Case Competition 2022")
-
-memory.limit(24000)
-
-```
-
-## Loading Data
-
-```{r load_data, echo=FALSE}
-
-new_all_train <- read.csv(file = "New_Alliance_data_.csv", header=T)
-
-summary(new_all_train)
-```
-
-## Step 0 - Exploratory Data Analysis (EDA)  
-
-There are 12,601 observations in the training set and 1,399 in the testing se.t  
-``` {r EDA}
-# Step 0 - Exploratory Data Analysis (EDA)
-summaryStats <- skim(new_all_train)
-summaryStats
-```
-
-## Step 0a - Feature Engineering  
-During EDA, the team determined that additional features would be beneficial for creating a useful model.
-
-Code is mirrored to create the same features in both the training and testing data.
-
-``` {r feature_engineering_train, echo = FALSE}
-
-# Conduct data cleaning and feature engineering
-# new_all_train <- read.csv(file = "New_Alliance_data_.csv", header=T)
-
-
-new_all_train <- new_all_train %>%
-  # Creates a "Count" column with all 1s for use in creating plots.
-  mutate(Count = 1, 
-         # Some TRAN_DT are in Excel's format and must be converted.
-         TRAN_DT = if_else(substr(TRAN_DT, 1,2) == "44", 
-                           as.Date(as.numeric(TRAN_DT), origin = "1899-12-30"),
-                           mdy(TRAN_DT)),
-         # Convert CUST_SINCE_DT to a date.
-         CUST_SINCE_DT = mdy(CUST_SINCE_DT),
-         # Convert ACTVY_DT to a date.
-         ACTVY_DT = mdy(ACTVY_DT),
-         #Pull transaction time out of TRAN_TS
-         TRAN_TS_Time = if_else(substr(TRAN_TS, 1,2) == "44",
-                                "12:00",
-                               substr(TRAN_TS, nchar(TRAN_TS)-4, 
-                                       nchar(TRAN_TS))),
-         # Extract the hour
-         TRAN_TS_Hour = as.numeric(substr(TRAN_TS_Time, 1, 2)),
-         # Create column with the day of the week for the transaction
-         TRAN_DayOfWeek = factor(weekdays(TRAN_DT),
-                                 levels=c("Sunday",
-                                          "Monday",
-                                          "Tuesday",
-                                          "Wednesday",
-                                          "Thursday",
-                                          "Friday",
-                                          "Saturday")),
-         # Column with the number of years a customer has been a member of the bank
-         Cust_Since_Years = as.numeric(difftime(mdy("12/31/2021"),
-                                                CUST_SINCE_DT,
-                                                unit="days")/365.25),
-         # Flag if a customer's age is too young to be a customer since...
-         Age_Mismatch = if_else(CUST_AGE <= Cust_Since_Years, "Yes", "No"),
-         # Bin customer age
-         Cust_Age_Bin = factor(case_when(CUST_AGE < 21 ~ "Under21",
-                                         CUST_AGE >= 21 & CUST_AGE < 35 ~ "21to35",
-                                         CUST_AGE >= 35 & CUST_AGE < 55 ~ "35to55",
-                                         CUST_AGE >= 55 ~ "55Over"),
-                               levels = c("Under21", "21to35", "35to55", "55Over")),
-         # Flag if the customer has been a member over 105 years.
-         Cust_Since_Mismatch = if_else(CUST_SINCE_DT >= 105, "Yes", "No"),
-         # Compute the number of days between the last time they updated their password
-         # and the date of the transaction
-         Days_Since_PW_Change = as.numeric(difftime(mdy_hm(TRAN_TS), 
-                                         mdy_hm(PWD_UPDT_TS), 
-                                         units = "days")),
-         # Compute the number of days between the last time they updated their phone number
-         # and the date of the transaction
-         Days_Since_Ph_Num_Change = as.numeric(difftime(mdy_hm(TRAN_TS), 
-                                         mdy_hm(PH_NUM_UPDT_TS), 
-                                         units = "days"))
-  )
-
-# Some of the response variables are no longer needed.
-# ACTN_CD, ACTN_INTNL_TXT, and TRAN_TYPE_CD have only 1 unique value
-# PWD_UPDT_TS, PH_NUM_UPDT_TS, and TRAN_TS_Time are causing issues trying to convert. 
-# Since we used them to create new variables, we are not losing any information by deleting them.
-new_all_train <- select(new_all_train, -c(ACTN_CD, ACTN_INTNL_TXT, 
-                                          TRAN_TYPE_CD, TRAN_TS, 
-                                          PWD_UPDT_TS, PH_NUM_UPDT_TS,
-                                          TRAN_TS_Time))
-
-
-
-summaryStats2 <- skim(new_all_train)
-summaryStats2
-```
-``` {r plot_new_features_train, echo = FALSE}
-
-plot_fill_DayOfWeek <- ggplot(subset(new_all_train, !is.na(TRAN_DayOfWeek)), 
-                         aes(x = TRAN_DayOfWeek, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "fill", stat = "identity") +
-  ggtitle("Percent Distribution of Fraud by Day of the Week") +
-  theme(legend.title = element_blank())
-
-plot_stack_DayOfWeek <- ggplot(subset(new_all_train, !is.na(TRAN_DayOfWeek)), 
-                         aes(x = TRAN_DayOfWeek, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Day of the Week") +
-  theme(legend.title = element_blank())
-
-plot_fill_Cust_Age_Bin <- ggplot(subset(new_all_train, !is.na(Cust_Age_Bin)), 
-                         aes(x = Cust_Age_Bin, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "fill", stat = "identity") +
-  ggtitle("Percent Distribution of Fraud by Customer Age") +
-  theme(legend.title = element_blank())
-
-plot_stack_Cust_Age_Bin <- ggplot(subset(new_all_train, !is.na(Cust_Age_Bin)), 
-                         aes(x = Cust_Age_Bin, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Customer Age") +
-  theme(legend.title = element_blank())
-
-# plot_fill_TRAN_TS_Time <- ggplot(subset(new_all_train, !is.na(TRAN_TS_Time)), 
-#                          aes(x = TRAN_TS_Time, fill = FRAUD_NONFRAUD, y = Count)) +
-#   geom_bar(position = "fill", stat = "identity") +
-#   ggtitle("Percent Distribution of Fraud by Time of Day") +
-#   theme(legend.title = element_blank())
-# 
-# plot_stack_TRAN_TS_Time <- ggplot(subset(new_all_train, !is.na(TRAN_TS_Time)), 
-#                          aes(x = TRAN_TS_Time, fill = FRAUD_NONFRAUD, y = Count)) +
-#   geom_bar(position = "stack", stat = "identity") +
-#   ggtitle("Distribution of Fraud by Time of Day") +
-#   theme(legend.title = element_blank())
-
-plot_fill_TRAN_TS_Hour <- ggplot(subset(new_all_train, !is.na(TRAN_TS_Hour)), 
-                         aes(x = TRAN_TS_Hour, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "fill", stat = "identity") +
-  ggtitle("Percent Distribution of Fraud by Hour of the Day") +
-  theme(legend.title = element_blank())
-
-plot_stack_TRAN_TS_Hour <- ggplot(subset(new_all_train, !is.na(TRAN_TS_Hour)), 
-                         aes(x = TRAN_TS_Hour, fill = FRAUD_NONFRAUD, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Hour of the Day \n('0' = Midnight to 12:59 AM)") +
-  theme(legend.title = element_blank())
-
-plot_box_Days_Since_PW_Change <- ggplot(subset(new_all_train, 
-                                               !is.na(Days_Since_PW_Change)), 
-                                        aes(x = Days_Since_PW_Change, 
-                                            y = FRAUD_NONFRAUD, 
-                                            fill = FRAUD_NONFRAUD)) +
-  geom_boxplot() +
-  ggtitle("Boxplot Distribution  of Days Since Password Change \n Separated by Fraud") +
-  theme(legend.position = "none")
-
-
-
-
-plot_fill_DayOfWeek
-
-plot_stack_DayOfWeek
-
-plot_fill_Cust_Age_Bin  
-
-plot_stack_Cust_Age_Bin  
-
-# plot_fill_TRAN_TS_Time  
-# 
-# plot_stack_TRAN_TS_Time
-
-plot_fill_TRAN_TS_Hour  
-
-plot_stack_TRAN_TS_Hour
-
-plot_box_Days_Since_PW_Change 
-```
-
-
-``` {r feature_engineering_test, echo = FALSE}
-
-# Conduct data cleaning and feature engineering
-new_all_test <- read.csv(file = "New_Alliance_holdout_.csv", header=T)
-
-
-new_all_test <- new_all_test %>%
-  # Creates a "Count" column with all 1s for use in creating plots.
-  mutate(Count = 1, 
-         # Some TRAN_DT are in Excel's format and must be converted.
-         TRAN_DT = if_else(substr(TRAN_DT, 1,2) == "44", 
-                           as.Date(as.numeric(TRAN_DT), origin = "1899-12-30"),
-                           mdy(TRAN_DT)),
-         # Convert CUST_SINCE_DT to a date.
-         CUST_SINCE_DT = mdy(CUST_SINCE_DT),
-         # Convert ACTVY_DT to a date.
-         ACTVY_DT = mdy(ACTVY_DT),
-         #Pull transaction time out of TRAN_TS
-         TRAN_TS_Time = if_else(substr(TRAN_TS, 1,2) == "44",
-                                "12:00",
-                               substr(TRAN_TS, nchar(TRAN_TS)-4, 
-                                       nchar(TRAN_TS))),
-         # Extract the hour
-         TRAN_TS_Hour = as.numeric(substr(TRAN_TS_Time, 1, 2)),
-         # Create column with the day of the week for the transaction
-         TRAN_DayOfWeek = factor(weekdays(TRAN_DT),
-                                 levels=c("Sunday",
-                                          "Monday",
-                                          "Tuesday",
-                                          "Wednesday",
-                                          "Thursday",
-                                          "Friday",
-                                          "Saturday")),
-         # Column with the number of years a customer has been a member of the bank
-         Cust_Since_Years = as.numeric(difftime(mdy("12/31/2021"),
-                                                mdy(CUST_SINCE_DT),
-                                                unit="days")/365.25),
-         # Flag if a customer's age is too young to be a customer since...
-         Age_Mismatch = if_else(CUST_AGE <= Cust_Since_Years, "Yes", "No"),
-         # Bin customer age
-         Cust_Age_Bin = factor(case_when(CUST_AGE < 21 ~ "Under21",
-                                         CUST_AGE >= 21 & CUST_AGE < 35 ~ "21to35",
-                                         CUST_AGE >= 35 & CUST_AGE < 55 ~ "35to55",
-                                         CUST_AGE >= 55 ~ "55Over"),
-                               levels = c("Under21", "21to35", "35to55", "55Over")),
-         # Flag if the customer has been a member over 105 years.
-         Cust_Since_Mismatch = if_else(CUST_SINCE_DT >= 105, "Yes", "No"),
-         # Compute the number of days between the last time they updated their password
-         # and the date of the transaction
-         Days_Since_PW_Change = as.numeric(difftime(mdy_hm(TRAN_TS), 
-                                         mdy_hm(PWD_UPDT_TS), 
-                                         units = "days")),
-         # Compute the number of days between the last time they updated their phone number
-         # and the date of the transaction
-         Days_Since_Ph_Num_Change = as.numeric(difftime(mdy_hm(TRAN_TS), 
-                                         mdy_hm(PH_NUM_UPDT_TS), 
-                                         units = "days"))
-  )
-
-# Some of the response variables are no longer needed.
-# ACTN_CD, ACTN_INTNL_TXT, and TRAN_TYPE_CD have only 1 unique value
-# PWD_UPDT_TS, PH_NUM_UPDT_TS, and TRAN_TS_Time are causing issues trying to convert. 
-# Since we used them to create new variables, we are not losing any information by deleting them.
-new_all_test <- select(new_all_test, -c(ACTN_CD, ACTN_INTNL_TXT, 
-                                          TRAN_TYPE_CD, TRAN_TS, 
-                                          PWD_UPDT_TS, PH_NUM_UPDT_TS,
-                                          TRAN_TS_Time))
-
-
-
-summaryStatsTest <- skim(new_all_test)
-summaryStatsTest
-```
-
-
-``` {r plot_new_features_test, echo = FALSE}
-# plot_fill_DayOfWeek <- ggplot(subset(new_all_test, !is.na(TRAN_DayOfWeek)), 
-#                          aes(x = TRAN_DayOfWeek, y = Count)) +
-#   geom_bar(position = "fill", stat = "identity") +
-#   ggtitle("Percent Distribution of Fraud by Day of the Week\n\n**TEST DATA**") +
-#   theme(legend.title = element_blank())
-
-plot_stack_DayOfWeek <- ggplot(subset(new_all_test, !is.na(TRAN_DayOfWeek)), 
-                         aes(x = TRAN_DayOfWeek, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Day of the Week\n\n**TEST DATA**") +
-  theme(legend.title = element_blank())
-
-# plot_fill_Cust_Age_Bin <- ggplot(subset(new_all_test, !is.na(Cust_Age_Bin)), 
-#                          aes(x = Cust_Age_Bin, y = Count)) +
-#   geom_bar(position = "fill", stat = "identity") +
-#   ggtitle("Percent Distribution of Fraud by Customer Age\n\n**TEST DATA**") +
-#   theme(legend.title = element_blank())
-
-plot_stack_Cust_Age_Bin <- ggplot(subset(new_all_test, !is.na(Cust_Age_Bin)), 
-                         aes(x = Cust_Age_Bin, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Customer Age\n\n**TEST DATA**") +
-  theme(legend.title = element_blank())
-
-# plot_fill_TRAN_TS_Time <- ggplot(subset(new_all_test, !is.na(TRAN_TS_Time)), 
-#                          aes(x = TRAN_TS_Time, y = Count)) +
-#   geom_bar(position = "fill", stat = "identity") +
-#   ggtitle("Percent Distribution of Fraud by Time of Day\n\n**TEST DATA**") +
-#   theme(legend.title = element_blank())
-# 
-# plot_stack_TRAN_TS_Time <- ggplot(subset(new_all_test, !is.na(TRAN_TS_Time)), 
-#                          aes(x = TRAN_TS_Time, y = Count)) +
-#   geom_bar(position = "stack", stat = "identity") +
-#   ggtitle("Distribution of Fraud by Time of Day\n\n**TEST DATA**") +
-#   theme(legend.title = element_blank())
-
-# plot_fill_TRAN_TS_Hour <- ggplot(subset(new_all_test, !is.na(TRAN_TS_Hour)), 
-#                          aes(x = TRAN_TS_Hour, y = Count)) +
-#   geom_bar(position = "fill", stat = "identity") +
-#   ggtitle("Percent Distribution of Fraud by Hour of the Day\n\n**TEST DATA**") +
-#   theme(legend.title = element_blank())
-
-plot_stack_TRAN_TS_Hour <- ggplot(subset(new_all_test, !is.na(TRAN_TS_Hour)), 
-                         aes(x = TRAN_TS_Hour, y = Count)) +
-  geom_bar(position = "stack", stat = "identity") +
-  ggtitle("Distribution of Fraud by Hour of the Day \n('0' = Midnight to 12:59 AM)\n\n**TEST DATA**") +
-  theme(legend.title = element_blank())
-
-plot_box_Days_Since_PW_Change <- ggplot(subset(new_all_test, 
-                                               !is.na(Days_Since_PW_Change)), 
-                                        aes(x = Days_Since_PW_Change, 
-                                            y = Count)) +
-  geom_boxplot() +
-  ggtitle("Boxplot Distribution  of Days Since Password Change \n Separated by Fraud\n\n**TEST DATA**") +
-  theme(legend.position = "none")
-
-
-
-
-# plot_fill_DayOfWeek
-
-plot_stack_DayOfWeek
-
-# plot_fill_Cust_Age_Bin  
-
-plot_stack_Cust_Age_Bin  
-
-# plot_fill_TRAN_TS_Time  
-# 
-# plot_stack_TRAN_TS_Time
-
-# plot_fill_TRAN_TS_Hour  
-
-plot_stack_TRAN_TS_Hour
-
-plot_box_Days_Since_PW_Change
-```
-
-
-``` {r save_csv, echo = FALSE}
-saveName <- str_c("New_All_Data_with_New_Vars_", Sys.Date(), ".csv", sep="")
-write_csv(new_all_train, saveName)
-
-saveName2 <- str_c("New_All_Holdout_with_New_Vars_", Sys.Date(), ".csv", sep="")
-write_csv(new_all_test, saveName2)
-```
-
-
-
-
-```{r create_dummy_variables, echo = FALSE}
-
-# Step 1  - partition data and dummy variables
-
-# Get all predictors without response variable
-new_all_train_predictors <- select(new_all_train,-FRAUD_NONFRAUD)
-
-dummies_model <- dummyVars(~., data = new_all_train_predictors)
-
-new_all_predictors_dummy <- data.frame(predict(dummies_model, 
-                                               newdata = new_all_train))
-
-new_all_train <- cbind(FRAUD_NONFRAUD = new_all_train$FRAUD_NONFRAUD,
-                       new_all_predictors_dummy)
-
-```
-
-
-## Train the models
-
-The team trained three model types and compared the results to select the best model.
- 1) Classification Regression
- 2) Random Forest
- 3) XGBoost
-
-
-### Classification Model
-``` {r train_classification_model}
-
-# new_all_class_model <- train(FRAUD_NONFRAUD ~ .,
-#                              data = new_all_train,
-#                              method = "rpart",
-#                              trControl = trainControl(method = "cv",
-#                                                      number = 5,
-#                                                      ## Estimate class probabilities
-#                                                      classProbs = TRUE,
-#                                                      #needed to get ROC
-#                                                      summaryFunction = twoClassSummary),
-#                              metric="ROC")
-# 
-# new_all_class_model
-# 
-# rpart.plot(new_all_class_model$finalModel, type=5)
-# 
-# # Get predicted probabilities 
-# predprob_credit<-predict(new_all_class_model , new_all_test, type="prob")
-# 
-# 
-# 
-# print("Classification Model Successfully Trained")
-```
-
-
-``` {r train_random_forest}
-
-
-# print("Random Forest Model Successfully Trained")
-```
-
-
-
-``` {r train_xgboost}
-
-
-# print("XGBoost Model Successfully Trained")
-```
